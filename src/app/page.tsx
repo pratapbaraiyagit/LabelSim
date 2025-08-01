@@ -12,7 +12,7 @@ import Autoplay from "embla-carousel-autoplay";
 import React from 'react';
 
 export default function Home() {
-  const featuredProducts = products.slice(0, 6);
+  const featuredProducts = products.filter(p => p.category === 'stitched').slice(0, 6);
   const WHATSAPP_NUMBER = "911234567890"; // Replace with actual number
   const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hello! I'm interested in your collection.")}`;
 
