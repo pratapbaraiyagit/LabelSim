@@ -35,11 +35,11 @@ export function ProductCard({ product }: ProductCardProps) {
       </CardHeader>
       <CardContent className="flex-grow p-4 flex flex-col">
         <CardTitle className="text-xl mb-2 group-hover:text-accent transition-colors">{product.name}</CardTitle>
-        <p className="text-foreground/80 font-body text-sm line-clamp-2 flex-grow">{product.description}</p>
+        <p className="text-foreground/80 font-body text-sm line-clamp-3 flex-grow">{product.description}</p>
       </CardContent>
-      <CardFooter className="p-4 pt-0 flex justify-between items-center">
+      <CardFooter className="p-4 pt-2 flex justify-between items-center">
         {product.price && <p className="text-lg font-semibold text-accent">{product.price}</p>}
-        <Button asChild variant="link" className="text-accent hover:text-accent-foreground/80">
+        <Button asChild variant="link" className="text-accent hover:text-accent-foreground/80 ml-auto">
           <Link href={getLink(product)}>
             View
             <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
