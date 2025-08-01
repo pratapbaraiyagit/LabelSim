@@ -48,9 +48,6 @@ export function Header() {
                   <Link href="/" onClick={() => setIsOpen(false)} className="text-xl font-headline text-foreground">
                     Label Sim
                   </Link>
-                   <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)} aria-label="Close menu">
-                      <X className="h-6 w-6" />
-                   </Button>
                 </div>
                 <nav className="flex flex-col p-4 space-y-4">
                   {navLinks.map((link) => (
