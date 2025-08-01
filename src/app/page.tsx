@@ -18,9 +18,9 @@ export default function Home() {
 
   const heroSlides = [
     {
-      src: "https://placehold.co/1920x1080.png",
-      alt: "Elegant ethnic wear model in a beautiful pink dress",
-      "data-ai-hint": "ethnic model pink"
+      src: "https://firebasestudio-hosting.web.app/images/5f77174a-d66a-48d6-bd38-19602e1c9444.jpeg",
+      alt: "Model in a red and white apple-print shirt holding a pink lollipop",
+      "data-ai-hint": "fashion model"
     },
     {
       src: "https://placehold.co/1920x1080.png",
