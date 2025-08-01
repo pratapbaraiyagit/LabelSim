@@ -49,4 +49,28 @@ export const products: Product[] = [
     imageUrl: 'https://placehold.co/600x800.png',
     category: 'stitched',
   },
+  {
+    id: 'chanderi-silk',
+    name: 'Chanderi Silk Suit',
+    description: 'Unstitched Chanderi silk fabric for a custom-fit suit.',
+    price: '₹3,500',
+    imageUrl: 'https://placehold.co/600x800.png',
+    category: 'unstitched',
+  },
+  {
+    id: 'banarasi-fabric',
+    name: 'Banarasi Brocade Fabric',
+    description: 'Luxurious Banarasi brocade for creating your own masterpiece.',
+    price: '₹4,800',
+    imageUrl: 'https://placehold.co/600x800.png',
+    category: 'unstitched',
+  },
+  {
+    id: 'cotton-print',
+    name: 'Jaipuri Cotton Print',
+    description: 'Vibrant and breathable Jaipuri cotton for casual wear.',
+    price: '₹2,200',
+    imageUrl: 'https://placehold.co/600x800.png',
+    category: 'unstitched',
+  },
 ];

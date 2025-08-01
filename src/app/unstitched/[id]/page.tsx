@@ -16,11 +16,6 @@ function getLink(product: Product) {
     return '/unstitched';
 }
 
-function getProductLink(product: Product) {
-    return `${getLink(product)}/${product.id}`;
-}
-
-
 export async function generateStaticParams() {
   return products.map((product) => ({
     id: product.id,
@@ -62,7 +57,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"
               priority
-              data-ai-hint="ethnic dress detail"
+              data-ai-hint="unstitched fabric"
             />
           </div>
 
@@ -76,15 +71,14 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
             </p>
             <div className="space-y-4 border-t pt-6">
                  <h3 className="font-semibold">Details</h3>
-                 <p className="text-sm text-foreground/60"><strong>Fabric:</strong> Premium Silk Blend, Organza</p>
-                 <p className="text-sm text-foreground/60"><strong>Sizes Available:</strong> S, M, L, XL (Made to order available)</p>
-                 <p className="text-sm text-foreground/60"><strong>Care:</strong> Dry Clean Only</p>
+                 <p className="text-sm text-foreground/60"><strong>Fabric:</strong> Varies</p>
+                 <p className="text-sm text-foreground/60"><strong>Care:</strong> Gentle Wash Recommended</p>
             </div>
             <div className="mt-8">
               <Button asChild size="lg" className="w-full md:w-auto bg-accent text-accent-foreground hover:bg-accent/90">
                 <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                   <WhatsAppIcon className="mr-2 h-5 w-5" />
-                  Order on WhatsApp
+                  Inquire on WhatsApp
                 </a>
               </Button>
             </div>

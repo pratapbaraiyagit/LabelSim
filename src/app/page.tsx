@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import { ArrowRight, ShoppingBag, X } from 'lucide-react';
+import { ArrowRight, ShoppingBag, Wand2 } from 'lucide-react';
 import { products } from '@/lib/data';
 import { ProductCard } from '@/components/product-card';
 
@@ -59,25 +59,28 @@ export default function Home() {
                 </Card>
               </Link>
 
-              <div className="group relative">
-                 <Card className="overflow-hidden h-full bg-muted/50 cursor-not-allowed">
+              <Link href="/unstitched" className="group">
+                <Card className="overflow-hidden h-full transform transition-transform duration-300 group-hover:scale-105 group-hover:shadow-xl">
                   <div className="relative h-96">
                     <Image
                       src="https://placehold.co/800x600.png"
                       alt="Unstitched Collection"
                       fill
-                      className="object-cover filter grayscale"
+                      className="object-cover"
                       data-ai-hint="fabric textiles"
                     />
-                    <div className="absolute inset-0 bg-black/50" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                     <div className="absolute bottom-0 p-8 text-white">
-                       <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mb-4"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline><path d="m10.4 12.6 2.8 2.8-2.8 2.8"></path><path d="m16.6 12.6-2.8 2.8 2.8 2.8"></path></svg>
+                       <Wand2 className="w-12 h-12 mb-4" />
                        <h2 className="text-4xl">Unstitched Collection</h2>
-                       <p className="mt-2 text-lg">Coming Soon</p>
+                       <p className="flex items-center mt-2 group-hover:underline">
+                        Create Your Own Style
+                        <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
+                      </p>
                     </div>
                   </div>
                 </Card>
-              </div>
+              </Link>
             </div>
           </div>
         </section>
