@@ -16,7 +16,7 @@ export default function Home() {
     <div className="flex flex-col">
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="relative h-[60vh] md:h-[80vh] flex items-center justify-center text-center text-white">
+        <section className="relative h-[60vh] md:h-[80vh] flex items-center justify-center text-center text-white overflow-hidden">
           <Image
             src="https://placehold.co/1920x1080.png"
             alt="Elegant ethnic wear model"
@@ -26,9 +26,9 @@ export default function Home() {
             data-ai-hint="ethnic model"
           />
           <div className="absolute inset-0 bg-black/40" />
-          <div className="relative z-10 p-4">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-headline mb-4 drop-shadow-lg animate-fade-in-up">SimSashay</h1>
-            <p className="text-lg md:text-2xl font-body drop-shadow-md animate-fade-in-up [animation-delay:0.5s]">Elegance in Every Thread</p>
+          <div className="relative z-10 p-4 animate-fade-in-up">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-headline mb-4 drop-shadow-lg animate-hero-title">SimSashay</h1>
+            <p className="text-lg md:text-2xl font-body drop-shadow-md animate-hero-subtitle">Elegance in Every Thread</p>
           </div>
         </section>
 
@@ -37,20 +37,20 @@ export default function Home() {
           <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-8">
               <Link href="/stitched" className="group">
-                <Card className="overflow-hidden h-full transform transition-transform duration-300 group-hover:scale-105 group-hover:shadow-xl">
+                <Card className="overflow-hidden h-full transition-all duration-500 ease-in-out hover:shadow-2xl hover:-translate-y-2">
                   <div className="relative h-96">
                     <Image
                       src="https://placehold.co/800x600.png"
                       alt="Stitched Collection"
                       fill
-                      className="object-cover"
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
                       data-ai-hint="stitched dress"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                     <div className="absolute bottom-0 p-8 text-white">
-                      <ShoppingBag className="w-12 h-12 mb-4" />
+                      <ShoppingBag className="w-12 h-12 mb-4 transition-transform duration-300 group-hover:rotate-[-10deg]" />
                       <h2 className="text-4xl">Stitched Collection</h2>
-                      <p className="flex items-center mt-2 group-hover:underline">
+                      <p className="flex items-center mt-2 opacity-80 group-hover:opacity-100 transition-opacity">
                         Explore Ready-to-Wear
                         <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
                       </p>
@@ -60,20 +60,20 @@ export default function Home() {
               </Link>
 
               <Link href="/unstitched" className="group">
-                <Card className="overflow-hidden h-full transform transition-transform duration-300 group-hover:scale-105 group-hover:shadow-xl">
+                <Card className="overflow-hidden h-full transition-all duration-500 ease-in-out hover:shadow-2xl hover:-translate-y-2">
                   <div className="relative h-96">
                     <Image
                       src="https://placehold.co/800x600.png"
                       alt="Unstitched Collection"
                       fill
-                      className="object-cover"
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
                       data-ai-hint="fabric textiles"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                     <div className="absolute bottom-0 p-8 text-white">
-                       <Wand2 className="w-12 h-12 mb-4" />
+                       <Wand2 className="w-12 h-12 mb-4 transition-transform duration-300 group-hover:rotate-[10deg]" />
                        <h2 className="text-4xl">Unstitched Collection</h2>
-                       <p className="flex items-center mt-2 group-hover:underline">
+                       <p className="flex items-center mt-2 opacity-80 group-hover:opacity-100 transition-opacity">
                         Create Your Own Style
                         <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
                       </p>
@@ -119,10 +119,10 @@ export default function Home() {
                 SimSashay was born from a passion for timeless Indian craftsmanship, reimagined for the modern woman. We believe in creating pieces that are not just clothes, but heirlooms of elegance.
               </p>
               <div className="flex justify-center gap-4">
-                 <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+                 <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 transition-transform hover:scale-105">
                     <Link href="/about">Read More</Link>
                  </Button>
-                 <Button asChild size="lg" variant="outline">
+                 <Button asChild size="lg" variant="outline" className="transition-transform hover:scale-105">
                     <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">Contact Us</a>
                  </Button>
               </div>
