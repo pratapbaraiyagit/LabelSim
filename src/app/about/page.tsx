@@ -28,12 +28,12 @@ export default function AboutPage() {
         <div className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-square">
-                <Image src="https://placehold.co/600x600.png" alt="Founder of SimSashay" fill className="object-cover rounded-lg shadow-lg" data-ai-hint="fashion designer portrait" />
+                <Image src="https://placehold.co/600x600.png" alt="Founder of Label Sim" fill className="object-cover rounded-lg shadow-lg" data-ai-hint="fashion designer portrait" />
             </div>
             <div className="space-y-6">
                 <h2 className="text-3xl">Who We Are</h2>
                 <p className="text-lg font-body text-foreground/80 leading-relaxed">
-                    SimSashay started as a dream in a small studio, fueled by a love for India's rich textile heritage. Our founder, a visionary with a passion for fashion, wanted to create a brand that celebrates femininity and grace through clothing.
+                    Label Sim started as a dream in a small studio, fueled by a love for India's rich textile heritage. Our founder, a visionary with a passion for fashion, wanted to create a brand that celebrates femininity and grace through clothing.
                 </p>
                 <p className="font-body text-foreground/80 leading-relaxed">
                     Our journey is one of dedication to craftsmanship and a commitment to creating pieces that make women feel confident and beautiful. Each design tells a story of tradition, artistry, and modern sophistication.

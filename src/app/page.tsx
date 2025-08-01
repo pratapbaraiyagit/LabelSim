@@ -68,7 +68,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-black/40" />
             <div className="absolute inset-0 flex items-center justify-center text-center text-white">
                 <div className="relative z-10 p-4 animate-fade-in-up">
-                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-headline mb-4 drop-shadow-lg animate-hero-title">SimSashay</h1>
+                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-headline mb-4 drop-shadow-lg animate-hero-title">Label Sim</h1>
                     <p className="text-lg md:text-2xl font-body drop-shadow-md animate-hero-subtitle">Elegance in Every Thread</p>
                 </div>
             </div>
@@ -159,7 +159,7 @@ export default function Home() {
             <div className="container max-w-7xl mx-auto text-center px-4 sm:px-6 lg:px-8">
               <h2 className="text-3xl md:text-4xl mb-4">Our Story</h2>
               <p className="max-w-3xl mx-auto text-foreground/80 mb-8 font-body text-lg">
-                SimSashay was born from a passion for timeless Indian craftsmanship, reimagined for the modern woman. We believe in creating pieces that are not just clothes, but heirlooms of elegance.
+                Label Sim was born from a passion for timeless Indian craftsmanship, reimagined for the modern woman. We believe in creating pieces that are not just clothes, but heirlooms of elegance.
               </p>
               <div className="flex justify-center gap-4">
                  <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 transition-transform hover:scale-105">

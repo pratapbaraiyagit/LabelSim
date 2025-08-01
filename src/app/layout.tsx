@@ -5,7 +5,7 @@ import { Footer } from '@/components/footer';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'SimSashay - Elegance in Every Thread',
+  title: 'Label Sim - Elegance in Every Thread',
   description: 'A minimalist and graceful fashion store for modern ethnic wear.',
   icons: {
     icon: '/favicon.ico',
