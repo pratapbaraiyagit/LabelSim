@@ -90,8 +90,8 @@ export default function AboutPage() {
                 </a>
             </Button>
             <Button asChild variant="ghost">
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                    <Instagram className="mr-2 h-5 w-5" /> Instagram
+                <a href="https://instagram.com/labelsim" target="_blank" rel="noopener noreferrer">
+                    <Instagram className="mr-2 h-5 w-5" /> @labelsim
                 </a>
             </Button>
           </div>

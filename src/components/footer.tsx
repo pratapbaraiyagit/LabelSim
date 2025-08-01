@@ -40,9 +40,9 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-foreground/80 hover:text-foreground">
+                <a href="https://instagram.com/labelsim" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-foreground/80 hover:text-foreground">
                   <Instagram className="w-4 h-4" />
-                  <span>@LabelSim</span>
+                  <span>@labelsim</span>
                 </a>
               </li>
             </ul>
