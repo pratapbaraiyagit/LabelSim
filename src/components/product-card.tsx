@@ -33,9 +33,9 @@ export function ProductCard({ product }: ProductCardProps) {
           </div>
         </Link>
       </CardHeader>
-      <CardContent className="flex-grow p-4">
+      <CardContent className="flex-grow p-4 flex flex-col">
         <CardTitle className="text-xl mb-2 group-hover:text-accent transition-colors">{product.name}</CardTitle>
-        <p className="text-foreground/80 font-body text-sm line-clamp-2">{product.description}</p>
+        <p className="text-foreground/80 font-body text-sm line-clamp-2 flex-grow">{product.description}</p>
       </CardContent>
       <CardFooter className="p-4 pt-0 flex justify-between items-center">
         {product.price && <p className="text-lg font-semibold text-accent">{product.price}</p>}
