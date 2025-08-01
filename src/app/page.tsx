@@ -1,3 +1,5 @@
+
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -6,30 +8,71 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { ArrowRight, ShoppingBag, Wand2 } from 'lucide-react';
 import { products } from '@/lib/data';
 import { ProductCard } from '@/components/product-card';
+import Autoplay from "embla-carousel-autoplay";
+import React from 'react';
 
 export default function Home() {
   const featuredProducts = products.slice(0, 6);
   const WHATSAPP_NUMBER = "911234567890"; // Replace with actual number
   const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hello! I'm interested in your collection.")}`;
 
+  const heroSlides = [
+    {
+      src: "https://placehold.co/1920x1080.png",
+      alt: "Elegant ethnic wear model in a beautiful pink dress",
+      "data-ai-hint": "ethnic model pink"
+    },
+    {
+      src: "https://placehold.co/1920x1080.png",
+      alt: "Model showcasing a custom-tailored outfit",
+      "data-ai-hint": "tailored fashion"
+    },
+    {
+      src: "https://placehold.co/1920x1080.png",
+      alt: "Close-up of intricate fabric and stitching",
+      "data-ai-hint": "intricate fabric"
+    }
+  ];
+
   return (
     <div className="flex flex-col">
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="relative h-[60vh] md:h-[80vh] flex items-center justify-center text-center text-white overflow-hidden">
-          <Image
-            src="https://placehold.co/1920x1080.png"
-            alt="Elegant ethnic wear model"
-            fill
-            className="object-cover object-top"
-            priority
-            data-ai-hint="ethnic model"
-          />
-          <div className="absolute inset-0 bg-black/40" />
-          <div className="relative z-10 p-4 animate-fade-in-up">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-headline mb-4 drop-shadow-lg animate-hero-title">SimSashay</h1>
-            <p className="text-lg md:text-2xl font-body drop-shadow-md animate-hero-subtitle">Elegance in Every Thread</p>
-          </div>
+        <section className="relative h-[60vh] md:h-[80vh] w-full overflow-hidden">
+          <Carousel
+            className="w-full h-full"
+            opts={{ loop: true }}
+            plugins={[
+              Autoplay({
+                delay: 4000,
+                stopOnInteraction: true,
+              }),
+            ]}
+          >
+            <CarouselContent>
+              {heroSlides.map((slide, index) => (
+                <CarouselItem key={index}>
+                  <div className="w-full h-[60vh] md:h-[80vh] relative">
+                    <Image
+                      src={slide.src}
+                      alt={slide.alt}
+                      fill
+                      className="object-cover object-top"
+                      priority={index === 0}
+                      data-ai-hint={slide['data-ai-hint']}
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <div className="absolute inset-0 bg-black/40" />
+            <div className="absolute inset-0 flex items-center justify-center text-center text-white">
+                <div className="relative z-10 p-4 animate-fade-in-up">
+                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-headline mb-4 drop-shadow-lg animate-hero-title">SimSashay</h1>
+                    <p className="text-lg md:text-2xl font-body drop-shadow-md animate-hero-subtitle">Elegance in Every Thread</p>
+                </div>
+            </div>
+          </Carousel>
         </section>
 
         {/* Category Section */}
