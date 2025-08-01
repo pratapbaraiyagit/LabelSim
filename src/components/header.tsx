@@ -5,6 +5,7 @@ import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import Image from 'next/image';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -19,8 +20,9 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-7xl items-center justify-between">
-        <Link href="/" className="text-2xl font-headline text-foreground">
-          Label Sim
+        <Link href="/" className="flex items-center gap-2">
+          <Image src="https://placehold.co/40x40.png" alt="Label Sim Logo" width={40} height={40} data-ai-hint="logo" />
+          <span className="text-xl font-headline text-foreground">Label Sim</span>
         </Link>
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
           {navLinks.map((link) => (
