@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Instagram, Mail } from 'lucide-react';
 import { WhatsAppIcon } from './whatsapp-icon';
+import Image from 'next/image';
 
 export function Footer() {
   const WHATSAPP_NUMBER = "911234567890"; // Replace with actual number
@@ -12,7 +13,10 @@ export function Footer() {
       <div className="container max-w-7xl py-12 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="space-y-4">
-            <h2 className="text-2xl font-headline font-bold italic">Label Sim</h2>
+            <Link href="/" className="flex items-center gap-2">
+              <Image src="/images/logo.jpg" alt="Label Sim Logo" width={40} height={40} data-ai-hint="logo" />
+              <span className="text-2xl font-headline text-foreground font-bold italic">Label Sim</span>
+            </Link>
             <p className="text-foreground/80 text-sm">Elegance in Every Thread.</p>
           </div>
           <div className="space-y-4">
