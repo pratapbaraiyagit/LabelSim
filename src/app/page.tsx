@@ -18,7 +18,7 @@ export default function Home() {
 
   const heroSlides = [
     {
-      src: "https://placehold.co/1920x1080.png",
+      src: "https://firebasestudio-hosting.web.app/images/5f77174a-d66a-48d6-bd38-19602e1c9444.jpeg",
       alt: "Model in a red and white apple-print shirt holding a pink lollipop",
       "data-ai-hint": "fashion model"
     },
@@ -68,7 +68,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-black/40" />
             <div className="absolute inset-0 flex items-center justify-center text-center text-white">
                 <div className="relative z-10 p-4 animate-fade-in-up">
-                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-headline mb-4 drop-shadow-lg animate-hero-title">Label Sim</h1>
+                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-headline mb-4 drop-shadow-lg animate-hero-title font-bold italic">Label Sim</h1>
                     <p className="text-lg md:text-2xl font-body drop-shadow-md animate-hero-subtitle">Elegance in Every Thread</p>
                 </div>
             </div>
