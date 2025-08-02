@@ -12,7 +12,7 @@ export function Footer() {
       <div className="container max-w-7xl py-12 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="space-y-4">
-            <h2 className="text-2xl font-headline">Label Sim</h2>
+            <h2 className="text-2xl font-headline font-bold italic">Label Sim</h2>
             <p className="text-foreground/80 text-sm">Elegance in Every Thread.</p>
           </div>
           <div className="space-y-4">

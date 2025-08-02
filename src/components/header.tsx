@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Menu, X } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
@@ -22,7 +22,7 @@ export function Header() {
       <div className="container flex h-16 max-w-7xl items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <Image src="https://placehold.co/40x40.png" alt="Label Sim Logo" width={40} height={40} data-ai-hint="logo" />
-          <span className="text-xl font-headline text-foreground">Label Sim</span>
+          <span className="text-xl font-headline text-foreground font-bold italic">Label Sim</span>
         </Link>
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
           {navLinks.map((link) => (
@@ -45,7 +45,7 @@ export function Header() {
             <SheetContent side="right" className="w-[240px] bg-background">
               <div className="flex flex-col h-full">
                 <div className="flex items-center justify-between p-4 border-b">
-                  <Link href="/" onClick={() => setIsOpen(false)} className="text-xl font-headline text-foreground">
+                  <Link href="/" onClick={() => setIsOpen(false)} className="text-xl font-headline text-foreground font-bold italic">
                     Label Sim
                   </Link>
                 </div>
